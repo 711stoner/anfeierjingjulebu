@@ -1,0 +1,14 @@
+:root { color-scheme: light; font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: #f6f3ed; color: #202020; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px clamp(20px, 5vw, 76px); background: #fff; border-bottom: 1px solid #e6e0d7; }
+.brand { color: inherit; font-size: 20px; font-weight: 700; letter-spacing: .04em; text-decoration: none; }
+.nav { display: flex; flex-wrap: wrap; gap: 20px; }
+.nav a { color: #37312c; font-size: 14px; letter-spacing: .08em; text-decoration: none; }
+.nav a:hover, .nav a[aria-current="page"] { color: #a95536; }
+.page { display: grid; place-items: center; min-height: calc(100vh - 86px); padding: 48px 24px; }
+.panel { width: min(720px, 100%); padding: clamp(32px, 7vw, 72px); background: #fff; border: 1px solid #e6e0d7; text-align: center; }
+.eyebrow { margin: 0 0 12px; color: #a95536; font-size: 12px; font-weight: 700; letter-spacing: .16em; }
+h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(38px, 7vw, 72px); font-weight: 400; }
+.panel p:last-child { margin: 20px 0 0; color: #6a625b; line-height: 1.8; }
+@media (max-width: 620px) { .site-header { align-items: flex-start; flex-direction: column; gap: 14px; } .page { min-height: calc(100vh - 124px); } }
